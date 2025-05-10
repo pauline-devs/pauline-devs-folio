@@ -4,7 +4,7 @@ import styles from './style.module.scss';
 import gsap from 'gsap';
 import Magnetic from '../Magnetic';
 
-export default function index({children, backgroundColor="#9E61FE", ...attributes}) {
+export default function index({children, backgroundColor="#9E61FE", onClick, link, ...attributes}) {
 
   const circle = useRef(null);
   let timeline = useRef(null);
@@ -27,15 +27,17 @@ export default function index({children, backgroundColor="#9E61FE", ...attribute
     }, 300)
   }
 
-  const handleClick = (link) => {
-    if (link) {
-        window.open(link, '_blank'); 
+  const handleClick = () => {
+    if (onClick) {
+      onClick();
+    } else if (link) {
+      window.open(link, '_blank');
     }
-};
+  };
 
   return (
     <Magnetic>
-      <div className={styles.roundedButton} style={{overflow: "hidden"}} onMouseEnter={() => {manageMouseEnter()}} onMouseLeave={() => {manageMouseLeave()}} {...attributes} onClick={() => handleClick("https://pauline-devs.github.io/skills-checking/")}>
+      <div className={styles.roundedButton} style={{overflow: "hidden"}} onMouseEnter={() => {manageMouseEnter()}} onMouseLeave={() => {manageMouseLeave()}} {...attributes}   onClick={handleClick}{...attributes}>
           {
             children
           }

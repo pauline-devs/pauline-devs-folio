@@ -51,3 +51,14 @@
     }
   }
   
+
+@media (max-width: 900px) {
+  .description{
+    top: 25% !important;
+    left: 0% !important;
+    margin-left: 40px;
+    svg{
+      visibility: hidden !important;
+    }
+  }
+}

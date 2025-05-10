@@ -9,7 +9,7 @@ import Rounded from '../../common/RoundedButton';
 
 const projects = [
   {
-    title: "Les Poésies Arabes",
+    title: "Poésies Arabes",
     src: "01-Poesie-arabe.webp",
     color: "#000000",
     category:"design & illustration",
@@ -114,17 +114,15 @@ export default function Home() {
 
   return (
   <main onMouseMove={(e) => {moveItems(e.clientX, e.clientY)}} className={styles.projects}>
-    <div className={styles.body}>
+    <div className={styles.body} id='work'>
       {
         projects.map( (project, index) => {
           return <Project index={index} title={project.title} category={project.category} link={project.link} manageModal={manageModal} key={index}/>
         })
       }
     </div>
-    <Rounded>
-          <p>
-          Designs that inspire my work 👇
-          </p>
+    <Rounded link="https://www.awwwards.com/">
+      <p>Designs that inspire my work 👇</p>
     </Rounded>
     <>
         <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>

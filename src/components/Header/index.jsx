@@ -1,5 +1,5 @@
 'use client';
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import { useEffect, useLayoutEffect, useRef, useState, useCallback } from 'react';
 import styles from './style.module.scss';
 import { usePathname } from 'next/navigation';
 import { AnimatePresence } from 'framer-motion';
@@ -32,6 +32,19 @@ export default function index() {
         })
     }, [])
 
+    const scrollToSection = useCallback((e) => {
+        e.preventDefault();
+        const href = e.currentTarget.getAttribute('href');
+        const id = href.replace('#', '');
+        const target = document.getElementById(id);
+      
+        if (target) {
+          const y = target.getBoundingClientRect().top + window.pageYOffset;
+          window.scrollTo({ top: y, behavior: 'smooth' });
+        }
+      }, []);
+    
+
     return (
         <>
         <div ref={header} className={styles.header}>
@@ -46,19 +59,19 @@ export default function index() {
             <div className={styles.nav}>
                 <Magnetic>
                     <div className={styles.el}>
-                        <a>Work</a>
+                        <a href= "#work" onClick={scrollToSection} style={{textDecoration:'none', color:'white'}}>Work</a>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>
                 <Magnetic>
                     <div className={styles.el}>
-                        <a>About</a>
+                        <a href= "#about" onClick={scrollToSection} style={{textDecoration:'none', color:'white'}}>About</a>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>
                 <Magnetic>
                     <div className={styles.el}>
-                        <a>Contact</a>
+                        <a  href= "#contact" onClick={scrollToSection} style={{textDecoration:'none', color:'white'}}>Contact</a>
                         <div className={styles.indicator}></div>
                     </div>
                 </Magnetic>

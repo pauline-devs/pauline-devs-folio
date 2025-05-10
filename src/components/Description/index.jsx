@@ -9,7 +9,7 @@ export default function index() {
     const description = useRef(null);
     const isInView = useInView(description)
     return (
-        <div ref={description} className={styles.description}>
+        <div ref={description} className={styles.description} id='about'>
             <div className={styles.body}>
                 <p>
                 {
@@ -20,12 +20,8 @@ export default function index() {
                 </p>
                 <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>I combine my passion for mixed media, technology, and storytelling to create interactive experiences at the intersection of art, music, and cyberspace.</motion.p>
                 <div data-scroll data-scroll-speed={0.1}>
-                    <Rounded className={styles.button}>
-                        <p>
-                            <a href='https://pauline-devs.github.io/skills-checking/' target='_blank' style={{textDecoration:'none', color:"white"}}>
-                            Skills online here
-                            </a>
-                        </p>
+                    <Rounded className={styles.button} link="https://pauline-devs.github.io/skills-checking/">
+                        <p>Skills online here</p>
                     </Rounded>
                 </div>
             </div>

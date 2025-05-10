@@ -26,11 +26,11 @@ export default function index() {
                             src={`/images/background1.jpeg`}
                             />
                         </div>
-                        <h2>Let's work</h2>
+                        <h2 id='contact'>Let's work</h2>
                     </span>
                     <h2>together</h2>
                     <motion.div style={{x}} className={styles.buttonContainer}>
-                        <Rounded  backgroundColor={"#8CFA8D"} className={styles.button}>
+                        <Rounded  backgroundColor={"#8CFA8D"} className={styles.button} link="mailto:pauline.studio@proton.me">
                             <p>Get in touch</p>
                         </Rounded>
                     </motion.div>
@@ -38,10 +38,10 @@ export default function index() {
                         <path d="M8 8.5C8.27614 8.5 8.5 8.27614 8.5 8L8.5 3.5C8.5 3.22386 8.27614 3 8 3C7.72386 3 7.5 3.22386 7.5 3.5V7.5H3.5C3.22386 7.5 3 7.72386 3 8C3 8.27614 3.22386 8.5 3.5 8.5L8 8.5ZM0.646447 1.35355L7.64645 8.35355L8.35355 7.64645L1.35355 0.646447L0.646447 1.35355Z" fill="white"/>
                     </motion.svg>
                 </div>
-                <div className={styles.nav}>
-                        <Rounded>
-                            <p>pauline.studio@proton.me</p>
-                        </Rounded>
+                <div className={styles.nav} >
+                <Rounded link="mailto:pauline.studio@proton.me">
+                    <p>pauline.studio@proton.me</p>
+                </Rounded>
                         {/* <Rounded>
                             <p>+31 6 27 84 74 30</p>
                         </Rounded> */}

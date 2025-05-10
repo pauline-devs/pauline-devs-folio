@@ -13,11 +13,13 @@
         margin: 0px;
         font-weight: 400;
         transition: all 0.4s;
+        text-align: left;
     }
 
     p{
         transition: all 0.4s;
         font-weight: 300;
+        text-align: right;
     }
 
     &:last-of-type{
@@ -36,3 +38,25 @@
         }
     }
 }
+
+@media (max-width: 1150px) {
+    .project{
+        h2{
+            font-size: 27px !important;
+        }
+    }
+}
+
+
+@media (max-width: 900px) {
+    .project{
+        p{
+            display: flex;
+            max-width: 150px;
+            margin-left: auto;
+            word-wrap: break-word;
+        }
+    }
+}
+
+
