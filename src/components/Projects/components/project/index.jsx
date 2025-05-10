@@ -2,7 +2,7 @@
 import React from 'react'
 import styles from './style.module.scss';
 
-export default function index({index, title, category, link, manageModal}) {
+export default function Project({index, title, category, link, manageModal}) {
 
     const handleClick = () => {
         if (link) {
