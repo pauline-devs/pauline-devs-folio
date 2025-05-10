@@ -129,3 +129,73 @@
     }
     
 }
+
+@media (max-width: 900px) {
+    .contact{
+    .body{
+    .title{
+        margin-left: 50px;
+        margin-right: 50px;
+        .imageContainer{
+            width: 60px !important;
+            height: 60px !important;
+        }
+        h2{
+            font-size: 8vw !important;
+        }
+    }
+    .nav{
+        display: flex;
+        justify-content: center;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .buttonContainer{
+        left: calc(100% - 300px) !important; 
+    }
+    .button{
+        width: 150px !important;
+        height: 150px !important;
+    }
+    .info{
+        margin-top: 150px !important;
+    }
+    }
+}
+}
+
+// @media (max-width: 450px) {
+//     .contact {
+//       .body {
+//         .info {
+//           display: flex;
+//           flex-direction: row;
+//           align-items: flex-start; 
+//           gap: 20px;
+  
+//           > div:first-of-type {
+//             display: none !important; 
+//           }
+  
+//           > div:last-of-type {
+//             display: flex; 
+//             flex-direction: column;
+//             align-items: flex-start;
+//             text-align: left;
+  
+//             span {
+//               text-align: left;
+//             }
+  
+//             p, a {
+//               text-align: left;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   }
+  
+  
+  
+  

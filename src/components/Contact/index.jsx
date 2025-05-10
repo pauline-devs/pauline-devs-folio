@@ -42,9 +42,6 @@ export default function index() {
                 <Rounded link="mailto:pauline.studio@proton.me">
                     <p>pauline.studio@proton.me</p>
                 </Rounded>
-                        {/* <Rounded>
-                            <p>+31 6 27 84 74 30</p>
-                        </Rounded> */}
                 </div>
                 <div className={styles.info}>
                     <div>
@@ -52,10 +49,6 @@ export default function index() {
                             <h3>Portfolio</h3>
                             <p>2025 © Edition</p>
                         </span>
-                        {/* <span>
-                            <h3>Version</h3>
-                            <p>11:49 PM GMT+2</p>
-                        </span> */}
                     </div>
                     <div>
                         <span>

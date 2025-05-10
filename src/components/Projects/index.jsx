@@ -122,7 +122,7 @@ export default function Home() {
       }
     </div>
     <Rounded link="https://www.awwwards.com/">
-      <p>Designs that inspire my work 👇</p>
+      <p>Inspiring designs 👇</p>
     </Rounded>
     <>
         <motion.div ref={modalContainer} variants={scaleAnimation} initial="initial" animate={active ? "enter" : "closed"} className={styles.modalContainer}>
