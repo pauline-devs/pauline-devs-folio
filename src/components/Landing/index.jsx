@@ -8,7 +8,7 @@ import { slideUp } from './animation';
 import { motion } from 'framer-motion';
 
 export default function Home() {
-
+  const baseURL = process.env.NEXT_PUBLIC_BASE_URL || '';
   const firstText = useRef(null);
   const secondText = useRef(null);
   const slider = useRef(null);
@@ -46,7 +46,7 @@ export default function Home() {
   return (
     <motion.main variants={slideUp} initial="initial" animate="enter" className={styles.landing}>
       <Image 
-        src="/images/aliencoding2.png"
+        src= {`${baseURL}/images/aliencoding2.png`}
         fill={true}
         alt="background"
       />
