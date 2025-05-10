@@ -6,7 +6,6 @@ import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
 import Magnetic from '../../common/Magnetic';
 
 export default function Index() {
-    const baseURL = process.env.NEXT_PUBLIC_BASE_URL || '';
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
@@ -24,7 +23,7 @@ export default function Index() {
                             <Image 
                             fill={true}
                             alt={"image"}
-                            src={`${baseURL}/images/background1.jpeg`}
+                            src={`/background1.jpeg`}
                             />
                         </div>
                         <h2 id="contact">Let&apos;s work</h2>

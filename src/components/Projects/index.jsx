@@ -132,7 +132,7 @@ export default function Home() {
                 const { src, color } = project
                 return <div className={styles.modal} style={{backgroundColor: color}} key={`modal_${index}`}>
                     <Image 
-                    src={`${baseURL}/images/${src}`}
+                    src={`/${src}`}
                     width={300}
                     height={0}
                     alt="image"
