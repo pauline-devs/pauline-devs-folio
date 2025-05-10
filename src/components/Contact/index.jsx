@@ -5,7 +5,7 @@ import { useRef } from 'react';
 import { useScroll, motion, useTransform, useSpring } from 'framer-motion';
 import Magnetic from '../../common/Magnetic';
 
-export default function Contact() {
+export default function Index() {
     const container = useRef(null);
     const { scrollYProgress } = useScroll({
         target: container,
@@ -26,7 +26,7 @@ export default function Contact() {
                             src={`/images/background1.jpeg`}
                             />
                         </div>
-                        <h2 id='contact'>Let's work</h2>
+                        <h2 id="contact">Let&apos;s work</h2>
                     </span>
                     <h2>together</h2>
                     <motion.div style={{x}} className={styles.buttonContainer}>

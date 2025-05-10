@@ -3,7 +3,8 @@ import { useInView, motion } from 'framer-motion';
 import { useRef } from 'react';
 import { slideUp, opacity } from './animation';
 import Rounded from '../../common/RoundedButton';
-export default function Description() {
+
+export default function Index() {
 
     const phrase = "I use creative coding and design tools to help your project stand out in the digital era.";
     const description = useRef(null);

@@ -1,6 +1,6 @@
 import styles from './style.module.scss';
 
-export default function Footer() {
+export default function Index() {
   return (
     <div className={styles.footer}>
         <a href="https://pauline-devs.github.io/skills-checking/" target='_blank' style={{textDecoration:'none', color:'white'}}>CV online</a>
