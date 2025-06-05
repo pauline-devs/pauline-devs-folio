@@ -6,7 +6,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
   title: 'Pauline Devs',
-  description: 'A quick portfolio landing page rebuild. Originally made by Dennis Snellenberg, he won an awwwards with his amazing portoflio. Remade the landing page using Next.js, Framer Motion and GSAP',
+  description: 'A quick portfolio leveraging Next.js, Framer Motion and GSAP',
 }
 
 export default function RootLayout({ children }) {

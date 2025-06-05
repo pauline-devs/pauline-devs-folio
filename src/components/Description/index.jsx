@@ -19,7 +19,7 @@ export default function Index() {
                     })
                 }
                 </p>
-                <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>I combine my passion for mixed media, technology, and storytelling to create interactive experiences at the intersection of art, music, and cyberspace.</motion.p>
+                <motion.p variants={opacity} animate={isInView ? "open" : "closed"}>I combine my passion for mixed media, technology, and storytelling to create interactive experiences at the intersection of art, music, and the cyberspace.</motion.p>
                 <div data-scroll data-scroll-speed={0.1}>
                     <Rounded className={styles.button} link="https://pauline-devs.github.io/skills-checking/">
                         <p>Skills online here</p>

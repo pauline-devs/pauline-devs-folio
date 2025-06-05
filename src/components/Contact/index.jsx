@@ -56,7 +56,7 @@ export default function Index() {
                         <Magnetic>
                             <p>
                             <a href="https://pauline-devs.github.io/skills-checking/" target='_blank' style={{textDecoration:'none', color:'white'}}>
-                                CV online
+                                Resume
                             </a>
                             </p>
                         </Magnetic>

@@ -51,8 +51,12 @@ export default function Index() {
             <div className={styles.logo}>
                 <p className={styles.copyright}>©</p>
                 <div className={styles.name}>
+                    {/* 
                     <p className={styles.codeBy}>Inspired by</p>
-                    <p className={styles.dennis}>D. Snellenber</p>
+                    <p className={styles.dennis}>D. Snellenber</p> 
+                    */}
+                     <p className={styles.codeBy}>Design |</p>
+                     <p className={styles.dennis}> Development</p> 
                     {/* <p className={styles.snellenberg}>Snellenberg</p> */}
                 </div>
             </div>
